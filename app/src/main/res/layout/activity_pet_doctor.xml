@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".moudle_2.pet.PetDoctorActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="2dp"
+            android:layout_margin="15dp"
+            android:tint="@color/white"
+            android:src="@mipmap/back"
+            android:onClick="back"
+            />
+
+        <TextView
+            android:text="找医生"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/doctor_recyc"
+            />
+    </RelativeLayout>
+</LinearLayout>

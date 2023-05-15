@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".moudle_1.love.LoveActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="2dp"
+            android:layout_margin="15dp"
+            android:tint="@color/white"
+            android:src="@mipmap/back"
+            android:onClick="back"
+            />
+
+        <TextView
+            android:text="爱心捐赠"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@color/white">
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            app:queryBackground="@android:color/transparent"
+            app:iconifiedByDefault="false"
+            android:background="@drawable/round_gray"
+            android:id="@+id/search_et"
+            app:queryHint="请输入搜索内容"
+            />
+
+    </LinearLayout>
+
+
+    <com.youth.banner.Banner
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:is_auto_play="true"
+        app:delay_time="3000"
+        android:layout_margin="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:id="@+id/banner"
+        />
+    <androidx.cardview.widget.CardView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        android:layout_margin="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="公益分类"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#F1F1F1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/service_recyc"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/point"
+        android:drawablePadding="10dp"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="推荐公益"
+        android:layout_marginTop="30dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F4F4F4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recommand_recyc"
+            />
+    </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

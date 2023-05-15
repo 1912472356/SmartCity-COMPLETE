@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:paddingBottom="10dp"
+    android:layout_marginBottom="10dp">
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@mipmap/user_head"
+        android:layout_margin="10dp"
+        android:id="@+id/head"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/head"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:text="用户名"
+        android:textColor="@color/black"
+        android:id="@+id/name"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/head"
+        android:layout_below="@id/name"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:id="@+id/date"
+        android:text="2020-11-1 14:11发布"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@id/date"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:singleLine="false"
+        android:id="@+id/content"
+        android:maxLines="10"
+        android:text="发布内容"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:src="@mipmap/resource"
+        android:layout_below="@id/content"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/img"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:id="@+id/comment">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/simple_comment_recyc"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/comment"
+        android:background="@color/white">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:padding="10dp"
+            android:layout_marginRight="20dp"
+            app:queryBackground="@android:color/transparent"
+            app:iconifiedByDefault="false"
+            android:background="@drawable/round_gray"
+            android:id="@+id/comment_et"
+            android:drawableLeft="@mipmap/comment"
+            android:drawablePadding="10dp"
+            android:hint="请输入留言内容"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:id="@+id/comment_btn"
+            android:background="@drawable/round_theme"
+            android:backgroundTint="@color/theme"
+            android:layout_gravity="center"
+            android:text="评论"
+            />
+    </LinearLayout>
+</RelativeLayout>

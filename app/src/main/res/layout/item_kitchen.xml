@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="10dp"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/resource"
+        android:id="@+id/img"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="推荐服务"
+            android:id="@+id/name"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="2人已收藏"
+            android:layout_marginTop="10dp"
+            android:id="@+id/collect"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/like_btn"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/like"
+            android:id="@+id/like_img"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="5dp"
+            android:text="2893"
+            android:id="@+id/like_cnt"
+            />
+
+    </LinearLayout>
+</LinearLayout>

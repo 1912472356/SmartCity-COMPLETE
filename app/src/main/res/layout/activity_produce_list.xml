@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".smart.produce.ProduceListActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="2dp"
+            android:layout_margin="15dp"
+            android:tint="@color/white"
+            android:src="@mipmap/back"
+            android:onClick="back"
+            />
+
+        <TextView
+            android:text="产品列表"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab_layout"
+        android:background="@color/white">
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部分类"
+            />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="产品分类1"
+            />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="产品分类2"
+            />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="产品分类3"
+            />
+    </com.google.android.material.tabs.TabLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                android:id="@+id/card1"
+                android:onClick="detail"
+                android:layout_margin="10dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:text="智慧边海防整体解决方案"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F4F4F4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:src="@mipmap/zhizao_res4"
+                        android:scaleType="centerCrop"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="10dp"
+                        android:textColor="@color/tv_color"
+                        android:singleLine="false"
+                        android:lineSpacingExtra="5dp"
+                        android:text="智慧边海防整体解决方案则利用物联网、大数据、云计算、边缘计算、人工智能、移动互联网等新一代信息技术，构建基于陆、海、空、天并结合边民大众的五类立体化感知系统。将多种航天高性能、高质量和高可靠性的智能化装备应用到了海域防护方面。"
+                        />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                android:id="@+id/card2"
+                android:onClick="detail"
+                android:layout_margin="10dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:text="华为智慧园区解决方案"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F4F4F4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:src="@mipmap/zhizao_res5"
+                        android:scaleType="centerCrop"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="10dp"
+                        android:textColor="@color/tv_color"
+                        android:singleLine="false"
+                        android:lineSpacingExtra="5dp"
+                        android:text="园区是工作与生活的载体，是经济发展的核心抓手，是构建万物互联的智能世界的落脚点。
+传统园区的信息化往往是孤立的烟囱式子系统建设，数据不互通，业务难融合，长期面临着服务体验差、综合安防弱、运营效率低、管理成本高、业务创新难等痛点。
+华为智慧园区解决方案源于自身管理变革和数字化转型实践，依托数字平台，联合生态伙伴，实现园区整体智慧化，使能业务创新，提升运营效率，引领至简体验。
+"
+                        />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                android:id="@+id/card3"
+                android:onClick="detail"
+                android:layout_margin="10dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:text="晶圆代工解决方案"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F4F4F4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:src="@mipmap/zhizao_res2"
+                        android:scaleType="centerCrop"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="10dp"
+                        android:textColor="@color/tv_color"
+                        android:singleLine="false"
+                        android:lineSpacingExtra="5dp"
+                        android:text="中芯国际是一家纯晶圆代工厂，向全球客户提供0.35微米到14纳米8寸和12寸芯片代工与技术服务。中芯国际除高端的制造能力之外，还为客户提供全方位的晶圆代工解决方案，包括光罩制造、IP研发及后段辅助设计服务等一站式服务(包含凸块加工服务、晶圆探测，以及最终的封装、测试等)。全面一体的晶圆代工解决方案,目标是更有效的帮助客户降低成本,以缩短产品上市时间。 "
+                        />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

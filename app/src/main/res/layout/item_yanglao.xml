@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/img"
+        android:src="@mipmap/resource"
+        android:scaleType="centerCrop"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="爱心"
+            android:id="@+id/name"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="爱心"
+            android:layout_marginTop="10dp"
+            android:id="@+id/content"
+            android:singleLine="false"
+            android:maxLines="3"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评价"
+                android:backgroundTint="@color/theme"
+                android:drawableLeft="@mipmap/comment"
+                android:textColor="@color/white"
+                android:drawableTint="@color/white"
+                android:drawablePadding="10dp"
+                android:textStyle="bold"
+                android:id="@+id/comment"
+                android:singleLine="false"
+                android:maxLines="3"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预约"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:backgroundTint="#EF6C00"
+                android:layout_alignParentRight="true"
+                android:id="@+id/sub_btn"
+                android:singleLine="false"
+                android:maxLines="3"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

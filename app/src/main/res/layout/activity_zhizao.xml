@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".smart.produce.ZhizaoActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="2dp"
+            android:layout_margin="15dp"
+            android:tint="@color/white"
+            android:src="@mipmap/back"
+            android:onClick="back"
+            />
+
+        <TextView
+            android:text="中国智造"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <com.youth.banner.Banner
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:id="@+id/banner"
+        app:is_auto_play="true"
+        app:delay_time="3000"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginTop="30dp"
+        android:id="@+id/fac_list"
+        android:gravity="center"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_baseline_format_list_bulleted_24"
+            android:tint="@color/theme"
+            android:layout_marginLeft="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:text="厂商列表"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/more3"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:id="@+id/product_list"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_baseline_format_list_bulleted_24"
+            android:tint="#FF8F00"
+            android:layout_marginLeft="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:text="产品列表"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/more3"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:id="@+id/event_list"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_baseline_format_list_bulleted_24"
+            android:tint="#6A1B9A"
+            android:layout_marginLeft="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:text="展会活动"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/more3"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:id="@+id/fac_employ"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_baseline_feedback_24"
+            android:tint="#00695C"
+            android:layout_marginLeft="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:text="厂商招聘"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/more3"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:id="@+id/fac_ruzhu"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_baseline_feedback_24"
+            android:tint="#7EF32C"
+            android:layout_marginLeft="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:text="厂商入驻"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/more3"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/point"
+        android:drawablePadding="10dp"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"
+        android:text="中国智造"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F4F4F4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:padding="15dp"
+        android:textColor="@color/tv_color"
+        android:textSize="14sp"
+        android:background="@color/white"
+        android:text="2022第十七届上海国际幼儿教育暨亲子产业博览会
+\n
+\n【幼教用品类】：教具、文具、绘画用品用具、橡皮泥、植物标本，手工课程、游戏课程、科学实验课程【图书类】：幼儿园图书、儿童出版物、插图书，动画音像制品、幼儿读物、左右脑开发教材、书店、亲子绘本馆、数字和多媒体，课程、教材等【教玩具类】：各种积木、拼图、桌面玩具、益智玩具等；【亲子服务类】：亲子摄影、亲子DIY、室内游乐园、儿童游乐中心、儿童职业体验馆、亲子游泳中心、儿童理发、主题餐厅、亲子宾馆、主题乐园、儿童医院、儿童保险、专用金融服务等；
+\n\n\n2022广州国际检验医学及体外诊断试剂展览
+ \n
+\n1、血液分析系统：血型分析仪、血型卡、全自动细胞分析仪、全自动涂卡机、血流变仪、半自动血细胞分析仪、半自动血栓、血凝分析仪自动血库系统、血红蛋白测定仪、 血小板聚集仪、血糖分析仪血液粘度计、血栓弹力仪、 红细胞变形仪 、 血液流变参数测试仪流式细胞分析仪 、全自动血栓止血分析系统 、全自动凝血纤溶分析仪等；2、生化分析系统：全自动生化分析仪、全自动快速（干式）生化分析仪、半自动生化分析仪、全自动多项电解质分析仪、半自动单/多项电解质分析仪等；3、免疫分析系统：全自动免疫分析仪、 半自动酶标仪、荧光显微检测系统、特定蛋白分析仪、 化学发光测定仪、荧光免疫分析仪、流式点阵仪、酶免仪等；4、细菌分析系统：结核杆菌分析仪、药敏分析仪、细菌测定系统、快速细菌培养仪 、幽门螺旋杆菌测定仪等；5、尿液分析系统：自动尿液分析仪及试纸等；6、生物分离系统：全自动电泳仪、毛细管电泳仪、等电聚焦电泳仪、核酸提纯分析仪、低中高压电泳仪、细胞电泳仪、全自动血气分析仪  组织氧含量测定仪  经皮血氧分压监测仪  血气采血器  血氧饱和度测定仪  CO₂红外分析仪  血气酸碱分析仪  电化学测氧仪等；7、基因和生命科学仪器：全自动医用PCR分析系统  精子分析仪  PCR扩增仪  生物芯片阅读仪等；8、临床医学检验辅助设备：超净装置、血球计数板、自动加样系统、自动进样系统、血型仪、洗板机等；9、实验器具类：耗材、医用冰箱、输血器具、显微器材、电子天平、试验台具10、试剂：诊断试剂、通用试剂、基准试剂、分析试剂、仪器分析试剂、临床化学试剂、 输血试剂 、 酶免分析免疫试剂、  基因检测、  微生物学检验等；11、上游原材料：抗原和抗体、酶/辅酶/酶底物、磁微粒/微球/NC膜等。
+"
+        android:singleLine="false"
+        android:lineSpacingExtra="15dp"
+        />
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

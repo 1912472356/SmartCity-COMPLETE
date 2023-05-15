@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".smart.relief.HelpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="15dp"
+            android:onClick="back"
+            android:padding="2dp"
+            android:src="@mipmap/back"
+            android:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="收到的求助"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="15dp"
+                        android:text="精准扶贫 助力农产品“走出去”"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="10dp"
+                        android:singleLine="false"
+                        android:text="5月31日，稷山县翟店镇东大有村村民在给采摘的太平红杏装箱准备销售。近年来，稷山县翟店镇东大有村在驻村帮扶工作队的扶持下，把精准扶贫与实施乡村振兴战略相结合，引导村民发展“太平红”杏树种植400余亩，同时通过网络宣传，畅通农产品的销售渠道，帮助农户实现产销对接，将东大有村的农特产品甜杏卖到了全国各地。"
+                        android:textColor="@color/tv_color" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="15dp"
+                        android:text="在中国庞大的消费市场中，如何才能解决农产品滞销的问题？"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="10dp"
+                        android:singleLine="false"
+                        android:text="利用如今信息化时代的大数据分析技术。
+具体来说是什么意思呢？ 那就是将农产品的交易放到电商平台或者放入电子设备包围的商圈，比如超市、大型市场等，保证每一件产品都有记录，最后通过大数据分析得到各个地方的各个农产品的需求量，最终合理的将适量的农产品运往对应需求量的地方。
+
+其实举个例子就能明白，像广东等地方的荔枝、桂圆、芒果等水果是盛产的，如果说某一年的产量很不错，并不意味着这一年对于果农来说就是丰收的一年，因为随之而来的就是水果的滞销，前阵子不就有一个新闻吗，一个种植桃子的果农由于滞销，将一万多斤桃子倒进了鱼塘，并且有五万斤的桃子被丢弃，多可惜啊！
+对于咱们这样一个吃货的多的国家来说，这些桃子真的是因为没人吃才被丢弃吗？不是！是因为没有找到合适的卖家！
+由于不知道什么地方有需求，附近没有办法销出去，就只能扔掉！这时候，大数据分析就起到作用了，通过大数据分析，试图将桃子送往有需求的地方，并且由于计算机数据分析快速，不会使桃子销路滞后造成质量下降，完全可以做到每天定点的分析。
+当然，这一销，必然会面临一个新的问题：如何打通更大范围乃至全国的产业链？ 这就需要比较大的财力和技术支撑，要达成这样的效果，必然少不了当今大企业的帮衬和国家的支持。
+"
+                        android:textColor="@color/tv_color" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="15dp"
+                        android:text="大河西农产品物流中心“十个一”精准扶贫 助力通道县贫困户滞销农产品销售"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="10dp"
+                        android:singleLine="false"
+                        android:text="华声在线讯（记者 杨桂清）“非常感谢你们，如果不是你们及时带客商来收购，我们合作社40多万斤玉米可就要全烂在地里了。”7月21日，通道县石壁村村民石新龙握住大河西农产品物流中心副总经理罗阳的手激动地说。
+
+副总经理罗阳携大河西商户前往通道县，解决滞销农产品
+
+
+罗总和商户在农户地里了解滞销农作物生长情况
+
+农户种植的冬瓜基地
+7月20日，长沙大河西农产品物流中心精准扶贫办公室接到了通道县委统战部打来的“求助”电话，该县冬瓜、南瓜、茄子等多个农产品已经到了上市季节，由于市场信息不畅找不到买家，大量农产品滞销田地卖不出去，面临严重亏损状态。为了帮助贫困户解决滞销农产品销售，大河西农产品物流中心副总经理罗阳立即组织市场内销售冬瓜、南瓜、玉米的4名商户前往通道县与贫困户进行对接洽谈。采购组一行深入通道县车控村50亩冬瓜基地和20亩南瓜基地、石壁村150亩玉米基地，查看菜品，洽谈合作事宜。在石壁村玉米基地，当看到农户们正为摘下来的玉米销路发愁时，商户们当即拍板采购2万斤发回长沙销售，并表示将全力帮助贫困户们解决剩余产品的销售。大河西农产品物流中心副总经理罗阳也当场承诺，免费为通道县提供一个集农产品展示、销售和信息平台于一体的经营场地，并组织一批农产品批发的实力商户为今后当地的种养殖农户提供市场信息、种养品种、销售代卖代收等长期深度的合作，真正意义上为通道县农产品销售和农村精准扶贫给予全力帮扶和支持。
+"
+                        android:textColor="@color/tv_color" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="15dp"
+                        android:text="农产品滞销，怎样让农村生活更向前一步？"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="10dp"
+                        android:singleLine="false"
+                        android:text="我是一个农村人，在农村我深有体会。在一个村子中，有的人家生活会好一些，有的会差一些。
+我的定义的富人，是过得还可以的这一类人，他们手中有些钱和车。这些是通过他自己的努力得来的，可以这样说，有的可能是打工，有的可能是去做小生意，有的可能是到工地上包小工程。
+然而还一些人，他们是困难的。可能会因一场病痛，让他们开不了锅。也许他们有田有土，但种出来的水果、蔬菜，没有人回收，卖不了钱，就只好烂在地中。
+
+烂在地中我桃子
+两年前，在我们这边，有一个种莲花白的农民，得了病，种出来的莲花白卖不出去，没有钱治只好等。后来新闻报道了后，社会人仕分分出手，莲花白卖完了，还有人捐了钱，治好了他的病。
+难到只有这样，才能解决农产品卖不出去的问题吗？
+如今，网上又一次报道了一些地方的水果卖不出去，只好摘来倒掉。
+这些问题，到底要如何解决，如何才能让农村生活更向前一步？你们是否想过？
+卖不出去的蔬菜
+水果、蔬菜都是我们农村人一滴汗水一滴汗水种了出来，但到了能卖时，卖不了。那是一种什么样的感受。所以农村中就出现了两类人，老人和小孩。
+老人继续种地，年轻人出门打工，小孩老人带。一种农村独有生活方式就这样形成了。只因为种植，养殖赚不了钱，有的80多的老人还在自家的一亩三分地中苦苦的劳动。
+"
+                        android:textColor="@color/tv_color" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

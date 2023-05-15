@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".moudle_1.rubbish.RubActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="2dp"
+            android:layout_margin="15dp"
+            android:tint="@color/white"
+            android:src="@mipmap/back"
+            android:onClick="back"
+            />
+
+        <TextView
+            android:text="垃圾分类宝典"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <com.youth.banner.Banner
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:is_auto_play="true"
+        app:delay_time="2000"
+        android:layout_margin="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:id="@+id/banner"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/round_theme"
+            android:backgroundTint="@color/theme"
+            android:textColor="@color/white"
+            android:drawableTint="@color/white"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:onClick="search"
+            android:textSize="18sp"
+            android:text="搜索"
+            android:drawableLeft="@mipmap/search"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/round_theme"
+            android:backgroundTint="#EF6C00"
+            android:textColor="@color/white"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:onClick="type"
+            android:textSize="18sp"
+            android:text="分类"
+            android:drawableLeft="@drawable/ic_baseline_format_list_bulleted_24"
+            android:drawableTint="@color/white"
+            />
+    </LinearLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tab_layout"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/news_recyc"
+            />
+    </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

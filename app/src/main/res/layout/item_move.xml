@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="3dp"
+            android:id="@+id/up_line"
+            android:layout_height="40dp"
+            android:background="@color/theme" />
+
+        <ImageView
+            android:id="@+id/view"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/move_point" />
+
+        <View
+            android:layout_width="3dp"
+            android:id="@+id/down_line"
+            android:layout_height="40dp"
+            android:background="@color/theme" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="快递发出"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/time_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="2022-03-02 辽宁省大连市甘井子区中转站"
+            android:textColor="@color/tv_color" />
+
+    </LinearLayout>
+</LinearLayout>

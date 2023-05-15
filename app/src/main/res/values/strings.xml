@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">智慧城市</string>
+    <string-array name="sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <string-array name="huanbao_yuyue_type">
+        <item>干垃圾</item>
+        <item>湿垃圾</item>
+        <item>有害垃圾</item>
+        <item>可回收垃圾</item>
+        <item>不可回收垃圾</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="yanglao_pinggu1">
+        <item>正常</item>
+        <item>痴呆</item>
+        <item>抑郁</item>
+        <item>暴力</item>
+
+    </string-array>
+    <string-array name="yanglao_pinggu2">
+        <item>正常</item>
+        <item>拄拐</item>
+        <item>轮椅</item>
+        <item>卧床</item>
+
+    </string-array>
+    <string-array name="yanglao_pinggu3">
+        <item>饮食</item>
+        <item>洗澡</item>
+        <item>穿衣</item>
+        <item>修饰</item>
+    </string-array>
+    <string-array name="car_type">
+        <item>小型汽车</item>
+        <item>大型汽车</item>
+        <item>小型新能源汽车</item>
+        <item>领馆汽车</item>
+        <item>警用汽车</item>
+    </string-array>
+
+    <string-array name="toousu_type">
+        <item>快递丢失</item>
+        <item>快递破损</item>
+        <item>快递被拆封</item>
+        <item>工作人员态度恶劣</item>
+        <item>未送货上门</item>
+    </string-array>
+
+    <string-array name="car_area">
+        <item>京</item>
+        <item>赣</item>
+        <item>浙</item>
+        <item>甘</item>
+        <item>川</item>
+        <item>泸</item>
+        <item>粤</item>
+    </string-array>
+</resources>

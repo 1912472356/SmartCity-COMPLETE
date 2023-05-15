@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".moudle_1.lib.LibCommentActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="2dp"
+            android:layout_margin="15dp"
+            android:tint="@color/white"
+            android:src="@mipmap/back"
+            android:onClick="back"
+            />
+
+        <TextView
+            android:text="图书馆评论"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/comment_recyc"
+            android:layout_above="@id/bottom"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/bottom"
+            android:background="@color/white">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp"
+                app:queryBackground="@android:color/transparent"
+                app:iconifiedByDefault="false"
+                android:background="@drawable/round_gray"
+                android:id="@+id/comment_et"
+                android:hint="请输入评论内容"
+                android:drawableLeft="@mipmap/comment"
+                android:drawablePadding="10dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/round_theme"
+                android:id="@+id/comment_btn"
+                android:backgroundTint="@color/theme"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="发表"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

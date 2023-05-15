@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".smart.community.TuiguangActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="15dp"
+            android:onClick="back"
+            android:padding="2dp"
+            android:src="@mipmap/back"
+            android:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="商业推广详情"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/shequ1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="福建省福州市杉林悦榕公馆智慧社区"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:lineSpacingExtra="5dp"
+                        android:singleLine="false"
+                        android:text="位于金山浦上大道万达广场北侧，是福州金山浦上的核心区，交通、购物、休闲、医疗、金融等各项配套一应俱全。
+
+项目地处闽江和乌龙江之间，坐拥着乌龙江湿地公园、金山公园以及的闽江公园南园，原生态的自然景观资源是其它新区板块所无法比拟的。社区旁环绕着仓山万达广尝特易购、红星国际三大城市综合体，各种生活配套齐全，同时受到三大城市综合体的眷顾，智慧社区建设内容整个浦上大道商圈价值凸显，成为金山板块的东街口，一站式生活配套，真正做到“离尘不离城”。整个项目规划占地近58亩，共规划有9栋11—31层的新古典主义建筑风格的小高层、高层建筑。在产品设计上，社区打造成为一个具有幽雅环境、文化内涵与鲜明个性的现代生活居住空间。同时将建筑群体自然地融入周边的城市环境，让业主感受整个空间给人以开放、宽容的非凡气度，让住户丝毫没有局促的感觉。在社区中心规划有近万平米的主题中央景观花园，以中央花园辐射全区景观，结合水景、林木、草坡进行空间叠错，塑造丰富的景观空间感受；此外区内各景观节点大小穿插，空间上由大型景观空间到精巧的私家花园，形成了层层递进的景观感受，回家的路步移景换。社区设有南、北向两个出入口，智慧社区建设内容进入社区的车辆直接从专用车道进入地下车库，做到人车分流，让业主生活不受车流影响，给业主创造一个安全舒适的居住空间。
+" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@mipmap/read"
+                            android:drawablePadding="10dp"
+                            android:maxLines="3"
+                            android:singleLine="false"
+                            android:text="2894人看过" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:maxLines="3"
+                            android:singleLine="false"
+                            android:text="2020-12-1 12:00发布" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

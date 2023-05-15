@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".smart.model.HeroActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="15dp"
+            android:onClick="back"
+            android:padding="2dp"
+            android:src="@mipmap/back"
+            android:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="英雄故事"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/head"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/kaimo_hero1" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/head"
+                    android:background="@color/white"
+                    android:text="大手拉小手，爱心相传递"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name"
+                    android:maxLines="4"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/head"
+                    android:background="@color/white"
+                    android:singleLine="false"
+                    android:lineSpacingExtra="15dp"
+                    android:text="3月16日是手拉手情系贫困小伙伴全国统一行动日。其互动活动开始于90年代初，由共青团中央，全国少工委联合有关部门共同发起的。" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="30dp"
+            android:onClick="btn"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/round_theme"
+            android:backgroundTint="@color/theme"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:text="致敬"
+
+            />
+                <RelativeLayout
+                    android:id="@+id/comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/head">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/simple_comment_recyc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/comment"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <EditText
+                        android:id="@+id/comment_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_gray"
+                        android:drawableLeft="@mipmap/comment"
+                        android:drawablePadding="10dp"
+                        android:hint="请输入留言内容"
+                        android:padding="10dp"
+                        app:iconifiedByDefault="false"
+                        app:queryBackground="@android:color/transparent" />
+
+                    <Button
+                        android:id="@+id/comment_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/round_theme"
+                        android:backgroundTint="@color/theme"
+                        android:text="评论"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/head2"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/kaimo_hero3" />
+
+                <TextView
+                    android:id="@+id/name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/head2"
+                    android:background="@color/white"
+                    android:text="慈善一日捐，慈善凝聚爱心"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name2"
+                    android:maxLines="4"
+                    android:singleLine="false"
+                    android:lineSpacingExtra="15dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/head2"
+                    android:background="@color/white"
+                    android:text="“让慈善精神发扬光大，为大爱镇江续写辉煌”。每年4月的“慈善一日捐”是镇江市慈善募集的传统项目。" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="30dp"
+            android:onClick="btn"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/round_theme"
+            android:backgroundTint="@color/theme"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:text="致敬"
+
+            />
+                <RelativeLayout
+                    android:id="@+id/comment2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/head2">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/simple_comment_recyc2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/comment2"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <EditText
+                        android:id="@+id/comment_et2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_gray"
+                        android:drawableLeft="@mipmap/comment"
+                        android:drawablePadding="10dp"
+                        android:hint="请输入留言内容"
+                        android:padding="10dp"
+                        app:iconifiedByDefault="false"
+                        app:queryBackground="@android:color/transparent" />
+
+                    <Button
+                        android:id="@+id/comment_btn2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/round_theme"
+                        android:backgroundTint="@color/theme"
+                        android:text="评论"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/head3"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/kaimo_hero4" />
+
+                <TextView
+                    android:id="@+id/name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/head3"
+                    android:background="@color/white"
+                    android:text="开展“送温暖、献爱心”捐赠衣物活动"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name3"
+                    android:maxLines="4"
+                    android:singleLine="false"
+                    android:lineSpacingExtra="15dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/head3"
+                    android:background="@color/white"
+                    android:text="由温州一善公益发起组织的“送温暖、献爱心”向贫困地区捐赠衣物、奉献爱心活动正在进行。一件衣物,看似一件小事,却能唤起人们内心深处对社会应该具有的爱心和责任感。" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="30dp"
+            android:onClick="btn"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/round_theme"
+            android:backgroundTint="@color/theme"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:text="致敬"
+
+            />
+                <RelativeLayout
+                    android:id="@+id/comment3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/head3">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/simple_comment_recyc3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/comment3"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <EditText
+                        android:id="@+id/comment_et3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_gray"
+                        android:drawableLeft="@mipmap/comment"
+                        android:drawablePadding="10dp"
+                        android:hint="请输入留言内容"
+                        android:padding="10dp"
+                        app:iconifiedByDefault="false"
+                        app:queryBackground="@android:color/transparent" />
+
+                    <Button
+                        android:id="@+id/comment_btn3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/round_theme"
+                        android:backgroundTint="@color/theme"
+                        android:text="评论"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

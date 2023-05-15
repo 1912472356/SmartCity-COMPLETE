@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".data.BarActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="2dp"
+            android:src="@mipmap/back"
+            android:tint="@color/white"
+            android:layout_margin="15dp"
+            android:onClick="back"
+            />
+
+        <TextView
+            android:text="柱状图"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:drawableLeft="@mipmap/point"
+        android:drawablePadding="10dp"
+        android:background="@color/white"
+        android:text="柱状图"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F1F1F1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

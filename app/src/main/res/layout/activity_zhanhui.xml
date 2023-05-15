@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".smart.produce.ZhanhuiActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="2dp"
+            android:layout_margin="15dp"
+            android:tint="@color/white"
+            android:src="@mipmap/back"
+            android:onClick="back"
+            />
+
+        <TextView
+            android:text="展会活动"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dp"
+            android:tint="@color/white"
+            android:src="@drawable/ic_baseline_add_24"
+            android:onClick="add"
+            />
+
+    </RelativeLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/event_recyc"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/point"
+        android:drawablePadding="10dp"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="过往展会"
+        android:layout_marginTop="20dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F4F4F4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/record1"
+        android:onClick="detail"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@mipmap/zhizao_res2"
+            android:scaleType="centerCrop"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2023年第25届中国（广州）国际建筑装饰博览会"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中国建博会（广州）,全称为中国（广州）国际建筑装饰博览会，是目前世界上该领域里展览面积最大的展览会，由中国对外贸易中心（集团）和中国建筑装饰协会联合主办，中国对外贸易广州展览总公司承办，得到中国林产工业协会、全国工商联家具装饰业商会支持，每年7月8-11日在广州的广交会展馆和广州保利世贸展馆举办。"
+                android:layout_marginTop="10dp"
+                android:singleLine="false"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/record2"
+        android:onClick="detail"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@mipmap/zhizao_res3"
+            android:scaleType="centerCrop"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CICEE2023长沙国际工程机械展览会(双年展）"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="长沙国际工程机械展览会将全方位展示工程机械全产业链领域上下游的新产品、新技术、新材料、新方案，全力打造价值交流平台"
+                android:layout_marginTop="10dp"
+                android:singleLine="false"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/record3"
+        android:onClick="detail"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@mipmap/zhizao_res4"
+            android:scaleType="centerCrop"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2023第三十五届中国国际塑料橡胶工业展览会"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="「CHINAPLAS 国际橡塑展」伴随着中国塑料及橡胶行业成长逾30年，至今已发展成为亚洲最具规模之橡塑业展会，并对中国橡塑业的发展产生了积极的推动作用。目前，「CHINAPLAS 国际橡塑展」不单是亚洲最大型的塑料及橡胶业展览会，业内人士更公认其影响力仅次于全球第一大橡塑展的德国「K展」，成为橡塑业的世界第二大展会。"
+                android:layout_marginTop="10dp"
+                android:singleLine="false"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

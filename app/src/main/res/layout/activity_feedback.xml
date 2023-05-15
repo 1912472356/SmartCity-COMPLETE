@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".person.FeedbackActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="2dp"
+            android:src="@mipmap/back"
+            android:tint="@color/white"
+            android:layout_margin="15dp"
+            android:onClick="back"
+            />
+
+        <TextView
+            android:text="意见反馈"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="2dp"
+            android:src="@drawable/ic_baseline_format_list_bulleted_24"
+            android:tint="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dp"
+            android:onClick="more"
+            />
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="意见和建议"
+            android:singleLine="false"
+            android:textColor="@color/black"
+            android:maxLines="3"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/theme"
+            android:layout_height="wrap_content"
+            android:text="0/150"
+            android:layout_alignParentRight="true"
+            android:id="@+id/cnt"
+            style="@style/Animation.Design.BottomSheetDialog"
+            android:singleLine="false"
+            android:maxLines="3"
+            />
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@color/white"
+        android:padding="15dp"
+        android:singleLine="false"
+        android:maxLength="150"
+        android:id="@+id/content"
+        android:hint="请输入您的意见和建议，字数限制到150字以内"
+        android:gravity="start"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="标题"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="right"
+            android:id="@+id/title"
+            android:hint="请输入标题"
+            android:backgroundTint="@color/white"
+            />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:onClick="save"
+        android:textSize="16sp"
+        android:background="@color/theme"
+        android:layout_gravity="center"
+        android:text="提交"
+        />
+</LinearLayout>

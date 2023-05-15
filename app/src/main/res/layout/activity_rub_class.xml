@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".moudle_1.rubbish.RubClassActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="2dp"
+            android:layout_margin="15dp"
+            android:tint="@color/white"
+            android:src="@mipmap/back"
+            android:onClick="back"
+            />
+
+        <TextView
+            android:text="分类"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@mipmap/rub"
+        android:scaleType="centerCrop"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_theme"
+            android:backgroundTint="@color/theme"
+            android:textColor="@color/white"
+            android:drawableTint="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/type1"
+            android:onClick="detail"
+            android:textSize="18sp"
+            android:text="可回收物"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_theme"
+            android:backgroundTint="#EF6C00"
+            android:textColor="@color/white"
+            android:id="@+id/type2"
+            android:textStyle="bold"
+            android:onClick="detail"
+            android:textSize="16sp"
+            android:text="有害垃圾"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_theme"
+            android:backgroundTint="#00838F"
+            android:textColor="@color/white"
+            android:id="@+id/type3"
+            android:textStyle="bold"
+            android:onClick="detail"
+            android:textSize="16sp"
+            android:text="湿垃圾"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_theme"
+            android:backgroundTint="#9E9D24"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:onClick="detail"
+            android:id="@+id/type4"
+            android:textSize="16sp"
+            android:text="干垃圾"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/goods_recyc"
+            />
+    </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

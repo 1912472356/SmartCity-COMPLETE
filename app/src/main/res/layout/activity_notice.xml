@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".smart.community.NoticeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="15dp"
+            android:onClick="back"
+            android:padding="2dp"
+            android:src="@mipmap/back"
+            android:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="通知详情"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="20dp"
+                        android:id="@+id/title"
+                        android:text="社区居委会通知"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@mipmap/shequ1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:lineSpacingExtra="5dp"
+                        android:padding="10dp"
+                        android:singleLine="false"
+                        android:text="项目地处闽江和乌龙江之间，坐拥着乌龙江湿地公园、金山公园以及的闽江公园南园，原生态的自然景观资源是其它新区板块所无法比拟的。社区旁环绕着仓山万达广尝特易购、红星国际三大城市综合体，各种生活配套齐全，同时受到三大城市综合体的眷顾，智慧社区建设内容整个浦上大道商圈价值凸显，成为金山板块的东街口，一站式生活配套，真正做到“离尘不离城”。整个项目规划占地近58亩，共规划有9栋11—31层的新古典主义建筑风格的小高层、高层建筑。在产品设计上，社区打造成为一个具有幽雅环境、文化内涵与鲜明个性的现代生活居住空间。同时将建筑群体自然地融入周边的城市环境，让业主感受整个空间给人以开放、宽容的非凡气度，让住户丝毫没有局促的感觉。在社区中心规划有近万平米的主题中央景观花园" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@color/white"
+                        android:lineSpacingExtra="5dp"
+                        android:padding="10dp"
+                        android:singleLine="false"
+                        android:text="2020-10-1发布" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

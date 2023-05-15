@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".guide.GuideActivity">
+
+    <com.youth.banner.Banner
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/banner"
+        app:is_auto_play="false"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:background="@drawable/round_theme"
+        android:backgroundTint="@color/theme"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:text="网络设置"
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/net_btn"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/round_theme"
+        android:backgroundTint="#EF6C00"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/home_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:text="进入主页"
+        />
+
+</RelativeLayout>

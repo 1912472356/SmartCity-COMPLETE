@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".moudle_1.post.PostDetailActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="2dp"
+            android:layout_margin="15dp"
+            android:tint="@color/white"
+            android:src="@mipmap/back"
+            android:onClick="back"
+            />
+
+        <TextView
+            android:text="驿站详情"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <com.youth.banner.Banner
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_margin="20dp"
+        android:id="@+id/banner"
+        app:is_auto_play="true"
+        app:delay_time="3000"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/theme"
+            android:drawableLeft="@drawable/ic_baseline_location_on_24"
+            android:layout_marginTop="5dp"
+            android:text="爱心" />
+
+        <TextView
+            android:id="@+id/call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:drawablePadding="5dp"
+            android:drawableTint="#EF6C00"
+            android:drawableLeft="@drawable/ic_baseline_call_24"
+            android:layout_marginTop="10dp"
+            android:text="爱心" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="爱心"
+            android:textColor="@color/tv_color" />
+
+        <TextView
+            android:id="@+id/bed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/tv_color"
+            android:text="爱心" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/point"
+        android:drawablePadding="10dp"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="驿站简介"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:padding="15dp"
+        android:id="@+id/intro"
+        android:singleLine="false"
+        android:text="驿站简介"
+        android:lineSpacingExtra="5dp"
+        android:textColor="@color/tv_color"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/point"
+        android:drawablePadding="10dp"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="房间配置"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:padding="15dp"
+        android:id="@+id/internalFacilities"
+        android:text="驿站简介"
+        android:lineSpacingExtra="5dp"
+        android:textColor="@color/tv_color"
+        android:singleLine="false"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/point"
+        android:drawablePadding="10dp"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="周边配套"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:padding="15dp"
+        android:id="@+id/surroundingFacilities"
+        android:text="驿站简介"
+        android:lineSpacingExtra="5dp"
+        android:singleLine="false"
+        android:textColor="@color/tv_color"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/point"
+        android:drawablePadding="10dp"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="特色服务"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:padding="15dp"
+        android:id="@+id/specialService"
+        android:text="驿站简介"
+        android:singleLine="false"
+        android:lineSpacingExtra="5dp"
+        android:textColor="@color/tv_color"
+        android:layout_height="wrap_content"
+        />
+
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
